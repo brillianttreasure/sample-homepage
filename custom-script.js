@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const originalImageSrc = imageElement.src;
     const newImageSrc = "./images/mountain.jpg";
 
-    imageElement.addEventListener("mouseover", function() {
-        imageElement.src = newImageSrc;
-    });
-
     imageElement.addEventListener("mouseout", function() {
         imageElement.src = originalImageSrc;
+    });
+
+    imageElement.addEventListener("mouseover", function() {
+        imageElement.src = newImageSrc;
     });
 });
